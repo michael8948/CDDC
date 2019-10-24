@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>CDDC</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="steam1.css" rel="stylesheet" type="text/css" >
+<link href="steam2.css" rel="stylesheet" type="text/css" >
+<link href="steam3.css" rel="stylesheet" type="text/css" >
+<link href="steam4.css" rel="stylesheet" type="text/css" >
+<link href="steam5.css" rel="stylesheet" type="text/css" >
+<link href="steam6.css" rel="stylesheet" type="text/css" >
+<link href="steam7.css" rel="stylesheet" type="text/css" >
+<link href="steam8.css" rel="stylesheet" type="text/css" >
+<link href="steam9.css" rel="stylesheet" type="text/css" >
+<link href="steam10.css" rel="stylesheet" type="text/css" >
+<link href="steam11.css" rel="stylesheet" type="text/css" >
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33786258-1', 'auto', {
+					'sampleRate': 0.4				});
+				ga('set', 'dimension1', false );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'application' );
+				ga('set', 'dimension4', "application\/app" );
+				ga('send', 'pageview' );
+
+			</script>
+			<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU" ></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/tooltip.js?v=.vG8yiuBTGwkE" ></script>
+
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/shared_global.js?v=aNqroEZPyXfD&amp;l=schinese" ></script>
+
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/javascript/main.js?v=zu3N6_NFFbkx&amp;l=schinese" ></script>
+
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/javascript/dynamicstore.js?v=PpYvyb6CknTg&amp;l=schinese" ></script>
+
+
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) { 
+				$J.data( document, 'x_readytime', new Date().getTime() ); 
+				$J.data( document, 'x_oldref', GetNavCookie() ); 
+				SetupTooltips( { tooltipCSSClass: 'store_tooltip'} ); 
+		});
+		</script><script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/javascript/gamehighlightplayer.js?v=ykDsB8CZZNn9&amp;l=schinese" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/user_reviews.js?v=9cIr8h-SOPSU&amp;l=schinese" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/dselect.js?v=yT8Q5U2-O4wX&amp;l=schinese" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/javascript/app_tagging.js?v=5LqNiNaj_OCF&amp;l=schinese" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/javascript/game.js?v=99XRD-HVwcrC&amp;l=schinese" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.js?v=.zrJjtPpGflQQ" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.resize.js?v=.TWn5-WgQL6_C" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.time.js?v=.wh3SCHrBBvNi" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.selection.js?v=.EGbodhwqG-oT" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/jquery-ui-1.9.2.js?v=.4YjdpcHj68MM" ></script>
+<script type="text/javascript" src="https://store.st.dl.bscstorage.net/public/shared/javascript/shared_responsive_adapter.js?v=QPY6d2SOXPzS&amp;l=schinese" ></script>
+		
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      } 
+        .p1 {
+            float: left
+        }
+        .p2 {
+            float: right
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body style="padding-top: 0px;">
+
+<main role="main">
+    
+<nav class="navbar navbar-light" style="padding-top: 0px; padding-bottom: 0px; position: fixed; width: 100%; height:50%; top: 0px; text-transform: uppercase">
+<ul style="list-style: none">
+    <li>
+    <a class="nav-link p1" href="#" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; color: #587baf; font-size: 1.9rem; ">CDDC</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link p1" href="#" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; color: #587baf; font-size: 1.9rem; ">Active</a>
+    </li>
+</ul>
+    
+    <img src="diving.jpg" width="250" height="250" class="d-inline-block" style="" alt="">
+   
+<ul style="list-style: none">
+  <li class="nav-item">
+    <a class="nav-link p2" href="#"  style="ffont-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; color: #587baf; font-size: 1.9rem; ">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link p2" href="#"  style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; color: #587baf; font-size: 1.9rem; ">Disabled</a>
+  </li>
+</ul>
+    </nav>
+
+    <div class="block">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+			</script>
+			<div class="game_background_glow">
+			<div class="block_content page_content" id="game_highlights">
+				
+				<div class="rightcol">
+					<div class="glance_ctn">
+						<div class="game_header_image_ctn">
+							<img class="game_header_image_full" src="#">
+						</div>
+													<div class="game_description_snippet">
+								***					</div>
+						
+						<div class="glance_ctn_responsive_left">
+															<div class="user_reviews">
+
+									
+																		<div class="user_reviews_summary_row" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;" data-tooltip-html="35 篇用户的游戏评测中有 60% 为好评。" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column all">***</div>
+										<div class="summary column">
+																					<span class="game_review_summary mixed" itemprop="description">***</span>
+																							<span class="responsive_hidden">
+													***
+												</span>
+																																	<span class="nonresponsive_hidden responsive_reviewdesc">
+												***											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="35">
+											<meta itemprop="ratingValue" content="6">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</div>
+
+
+							
+
+
+															<div class="release_date">
+									<div class="subtitle column">***</div>
+									<div class="date">***</div>
+								</div>
+							
+																						<div class="dev_row">
+									<div class="subtitle column">***</div>
+									<div class="summary column" id="developers_list">
+										<a href="https://store.steampowered.com/developer/jujubee?snr=1_5_9__2000">***</a>									</div>
+								</div>
+							
+															<div class="dev_row">
+									<div class="subtitle column">***</div>
+									<div class="summary column">
+									<a href="https://store.steampowered.com/publisher/jujubee?snr=1_5_9__2000">***</a>									</div>
+								</div>
+														
+						</div>
+						</div>
+
+						<div class="glance_ctn_responsive_right">
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="glance_tags_ctn popular_tags_ctn">
+										<div class="glance_tags_label">***</div>
+										<div class="glance_tags popular_tags" data-appid="990030">
+											<a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												***												</a><a href="https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												***												</a><a href="https://store.steampowered.com/tags/zh-cn/Nature/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												***												</a><a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												***												</a><a href="https://store.steampowered.com/tags/zh-cn/%E6%B0%B4%E5%BA%95/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												***												</a><a href="https://store.steampowered.com/tags/zh-cn/%E4%BD%93%E8%82%B2/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												***												</a><div class="app_tag add_button" onclick="ShowAppTagModal( 990030 )">+</div>
+										</div>
+									</div>
+																													</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+				<div class="leftcol">
+					<div class="highlight_ctn">
+						<div class="highlight_overflow">
+							<div id="highlight_player_area" >
+								<div class="highlight_player_area_spacer">
+									<img src="https://store.st.dl.bscstorage.net/public/images/game/game_highlight_image_spacer.gif">
+								</div>
+																									<div class="highlight_player_item highlight_movie" id="highlight_movie_256751787"
+										 style="display: none;"
+										 data-webm-source="#"
+										 data-webm-hd-source="https://media.st.dl.bscstorage.net/steam/apps/256751787/movie_max.webm?t=1558976434"
+										 data-mp4-source="https://media.st.dl.bscstorage.net/steam/apps/256751787/movie480.mp4?t=1558976434"
+										 data-mp4-hd-source="https://media.st.dl.bscstorage.net/steam/apps/256751787/movie_max.mp4?t=1558976434"
+										 data-poster="#">
+								</div>
+																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256751178"
+										 style="display: none;"
+										 data-webm-source="#"
+										 data-webm-hd-source="https://media.st.dl.bscstorage.net/steam/apps/256751178/movie_max.webm?t=1558405706"
+										 data-mp4-source="https://media.st.dl.bscstorage.net/steam/apps/256751178/movie480.mp4?t=1558405706"
+										 data-mp4-hd-source="https://media.st.dl.bscstorage.net/steam/apps/256751178/movie_max.mp4?t=1558405706"
+										 data-poster="#">
+									</div>
+																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256748701"
+										 style="display: none;"
+										 data-webm-source="#"
+										 data-webm-hd-source="https://media.st.dl.bscstorage.net/steam/apps/256748701/movie_max.webm?t=1558406516"
+										 data-mp4-source="https://media.st.dl.bscstorage.net/steam/apps/256748701/movie480.mp4?t=1558406516"
+										 data-mp4-hd-source="https://media.st.dl.bscstorage.net/steam/apps/256748701/movie_max.mp4?t=1558406516"
+										 data-poster="#">
+									</div>
+								
+																    <div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_5be846d49046d83776b71faec896bd884448a3c8.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_5be846d49046d83776b71faec896bd884448a3c8.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_463a0da71d7542ea33008a667596ae02534133f6.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_463a0da71d7542ea33008a667596ae02534133f6.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_25a75e749f5631ad2df70748c4f2192aa346a0fe.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="##" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_25a75e749f5631ad2df70748c4f2192aa346a0fe.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_72b4b64ee88c7e96e5d1e73f615ecb94b4520582.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="##" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_72b4b64ee88c7e96e5d1e73f615ecb94b4520582.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_7b99881dd6d0686da0e5db96221acad261cd32f4.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="##" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_7b99881dd6d0686da0e5db96221acad261cd32f4.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_6823f23b3cc1ab386e97d33185e2f4567232e00a.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_6823f23b3cc1ab386e97d33185e2f4567232e00a.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_e1cade0ffa5e277ab5286077620beeb67d610c03.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_e1cade0ffa5e277ab5286077620beeb67d610c03.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_868d6b4a52c50b17fd756470aecbfd43662a787a.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_868d6b4a52c50b17fd756470aecbfd43662a787a.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>#
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_7b2340bed9b6c48c0b44f6569e6a45371679f2cc.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_7b2340bed9b6c48c0b44f6569e6a45371679f2cc.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_65f7d4a5830698c524645bdb6ea9c4bb62b7d243.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_65f7d4a5830698c524645bdb6ea9c4bb62b7d243.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_9da2e65aace46d22746db6d20412e360922cef59.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_9da2e65aace46d22746db6d20412e360922cef59.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_eae2b563cc910098c76732903d4fd21d0081c61b.jpg" style="display: none;">
+										<div class="screenshot_holder">#
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_eae2b563cc910098c76732903d4fd21d0081c61b.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+												#					<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_10625e7af5dbf77d38b96a068cde71e3b1fee205.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_10625e7af5dbf77d38b96a068cde71e3b1fee205.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_529398e865064e0044632e4ca8cc066327ca06db.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_529398e865064e0044632e4ca8cc066327ca06db.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_8097c3d1face79990fd02ff727bb0b148421d8b2.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_8097c3d1face79990fd02ff727bb0b148421d8b2.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_81d30be31de3b12bca1d1d8ae009ac311d9952a8.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="#" href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/990030/ss_81d30be31de3b12bca1d1d8ae009ac311d9952a8.1920x1080.jpg?t=1567790394" target="_blank" rel="noopener">
+												<img src="#">
+											</a>
+										</div>
+									</div>
+				                <script type="text/javascript">
+																		var rgScreenshotURLs = {"ss_5be846d49046d83776b71faec896bd884448a3c8.jpg":"#",
+                                                                        "ss_463a0da71d7542ea33008a667596ae02534133f6.jpg":"#",
+                                                                        "ss_25a75e749f5631ad2df70748c4f2192aa346a0fe.jpg":"#",
+                                                                        "ss_72b4b64ee88c7e96e5d1e73f615ecb94b4520582.jpg":"#",
+                                                                        "ss_7b99881dd6d0686da0e5db96221acad261cd32f4.jpg":"#",
+                                                                        "ss_6823f23b3cc1ab386e97d33185e2f4567232e00a.jpg":"#",
+                                                                        "ss_e1cade0ffa5e277ab5286077620beeb67d610c03.jpg":"#",
+                                                                        "ss_868d6b4a52c50b17fd756470aecbfd43662a787a.jpg":"#",
+                                                                        "ss_7b2340bed9b6c48c0b44f6569e6a45371679f2cc.jpg":"#",
+                                                                        "ss_65f7d4a5830698c524645bdb6ea9c4bb62b7d243.jpg":"#",
+                                                                        "ss_9da2e65aace46d22746db6d20412e360922cef59.jpg":"#",
+                                                                        "ss_eae2b563cc910098c76732903d4fd21d0081c61b.jpg":"#",
+                                                                        "ss_10625e7af5dbf77d38b96a068cde71e3b1fee205.jpg":"#",
+                                                                        "ss_529398e865064e0044632e4ca8cc066327ca06db.jpg":"#",
+                                                                        "ss_8097c3d1face79990fd02ff727bb0b148421d8b2.jpg":"#",
+                                                                        "ss_81d30be31de3b12bca1d1d8ae009ac311d9952a8.jpg":"#"};
+								</script>
+							</div>
+														<div id="highlight_strip">
+								<div id="highlight_strip_scroll" style="width: 2282px;">
+									<div class="highlight_selector"></div>
+
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256751787" >
+											<img class="movie_thumb" src="#">
+											<div class="highlight_movie_marker"></div>
+										</div>
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256751178" >
+											<img class="movie_thumb" src="#">
+											<div class="highlight_movie_marker"></div>
+										</div>
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256748701" >
+											<img class="movie_thumb" src="#">
+											<div class="highlight_movie_marker"></div>
+										</div>
+									
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_5be846d49046d83776b71faec896bd884448a3c8.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_463a0da71d7542ea33008a667596ae02534133f6.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_25a75e749f5631ad2df70748c4f2192aa346a0fe.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_72b4b64ee88c7e96e5d1e73f615ecb94b4520582.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_7b99881dd6d0686da0e5db96221acad261cd32f4.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_6823f23b3cc1ab386e97d33185e2f4567232e00a.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_e1cade0ffa5e277ab5286077620beeb67d610c03.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_868d6b4a52c50b17fd756470aecbfd43662a787a.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_7b2340bed9b6c48c0b44f6569e6a45371679f2cc.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_65f7d4a5830698c524645bdb6ea9c4bb62b7d243.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_9da2e65aace46d22746db6d20412e360922cef59.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_eae2b563cc910098c76732903d4fd21d0081c61b.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_10625e7af5dbf77d38b96a068cde71e3b1fee205.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_529398e865064e0044632e4ca8cc066327ca06db.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_8097c3d1face79990fd02ff727bb0b148421d8b2.jpg" >
+											<img src="#">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_81d30be31de3b12bca1d1d8ae009ac311d9952a8.jpg" >
+											<img src="#">
+										</div>
+									
+																	</div>
+							</div>
+															<div class="slider_ctn">
+									<div id="highlight_slider_left" class="slider_left"><span></span></div>
+									<div class="slider" id="highlight_slider" >
+										<div class="slider_bg">
+										</div>
+										<div class="handle">
+										</div>
+									</div>
+									<div id="highlight_slider_right" class="slider_right"><span></span></div>
+								</div>
+								<script type="text/javascript">
+									$J( function() {
+										var player = new HighlightPlayer( {
+											elemPlayerArea: 'highlight_player_area',
+											elemStrip: 'highlight_strip',
+											elemStripScroll: 'highlight_strip_scroll',
+											elemSlider: 'highlight_slider',
+											rgScreenshotURLs: rgScreenshotURLs
+										} );
+
+										$J('#highlight_slider_right').click( function() {
+											player.Transition( true );
+										});
+										$J('#highlight_slider_left').click( function() {
+											player.TransitionBack( true );
+										});
+
+										if( window.location.hash )
+										{
+											var ssid = window.location.hash.substr(1);
+											player.HighlightScreenshot(ssid);
+										}
+									} );
+								</script>
+													</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+
+			
+			
+
+			
+			<div class="queue_overflow_ctn">
+									<div class="queue_ctn">
+											<div class="queue_actions_ctn">
+							<p></p>
+						</div>
+					</div>
+							</div>
+			
+			
+
+			
+			
+		</div>
+	
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Micheal Shao</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Oscar Zhu</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Bill Zhang</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="main.html">Back to top</a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
